@@ -167,7 +167,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     XiaomiDolby
-    
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
@@ -282,6 +282,10 @@ $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 # Media
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+PRODUCT_PACKAGES += \
+    libstagefrighthw \
+    libstagefright_foundation-v33
 
 # Native Public Libraries
 PRODUCT_COPY_FILES += \
