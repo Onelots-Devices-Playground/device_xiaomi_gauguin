@@ -172,6 +172,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# EvolutionX specific flags
+
+TARGET_USES_MINI_GAPPS := true
+BUILD_BCR := false
+TARGET_INCLUDE_ACCORD := false
+
 # Filesystem
 PRODUCT_PACKAGES += \
     e2fsck_ramdisk \
